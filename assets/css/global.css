@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+::placeholder {
+  color: var(--gray2);
+}
+ul {
+  padding-left: 0px;
+  list-style: none;
+  margin: 0px;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--gray3);
+  border-radius: 5px;
+}
+:root {
+  --main-color: #5ac1b8;
+
+  --hover-bg: #5ac1b810;
+  --white: #fff;
+
+  --black: #16161a;
+  --gray1: #16161a;
+  --gray2: #909ab4;
+  --gray3: #a9a9b9;
+  --gray4: #e2e9ee;
+  --gray5: #fafbfc;
+  --gray6: #dadde5;
+
+  --border: #eef2f5;
+
+  --title: #181a1f;
+
+
+  --blue:#235ee7
+}
+
+.relative{
+  position: relative;
+}
