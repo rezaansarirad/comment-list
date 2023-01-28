@@ -63,15 +63,61 @@ export const state = () => ({
       replies: [],
     },
   ],
-
-
 });
 
-export const mutations = {};
+export const mutations = {
+  setUpdateLike(state, data) {
+    state.comments.map((item) => {
+      if (item.id === data) {
+        if (item.iLikedIt == false) {
+          item.iLikedIt = true;
+          item.likes += 1;
+        } else {
+          item.iLikedIt = false;
+          if (item.likes > 0) {
+            item.likes -= 1;
+          }
+        }
+      }
+      if (item?.replies?.length) {
+        item.replies.map((el) => {
+          {
+            if (el.id === data) {
+              if (el.iLikedIt == false) {
+                el.iLikedIt = true;
+                el.likes += 1;
+              } else {
+                el.iLikedIt = false;
+                if (el.likes > 0) {
+                  el.likes -= 1;
+                }
+              }
+            }
+          }
+        });
+      }
+    });
+  },
 
-export const actions = {};
+  setNewComment(state, data) {
+    state.comments.push(data);
+  },
+
+  setReply: (state, { id, data }) => {
+    state.comments.map((item) => {
+      if (item.id === id) {
+        item.replies.push(data);
+      }
+    });
+  },
+};
+
+export const actions = {
+  updateLike({ commit }, data) {
+    commit("setUpdateLike", data);
+  },
+};
 
 export const getters = {
   getComments: (state) => state.comments,
-  
 };

@@ -26,6 +26,7 @@ export default {
 
   plugins: [
     { src: "~/plugins/utils.js" },
+    { src: "~/plugins/uuid.js" },
   ],
 
  

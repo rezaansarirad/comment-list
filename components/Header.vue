@@ -2,11 +2,12 @@
   <div class="card-holder">
     <div class="items">
       <img :src="avatarUrl" alt="avatar" />
+
       <input
         type="text"
         placeholder="Start a discussion"
-        v-model="sendComent"
-        @keyup.enter="sendEmail()"
+        v-model="newCommnet"
+        @change="sendComment($event)"
       />
     </div>
   </div>
@@ -16,14 +17,31 @@
 export default {
   data() {
     return {
-      sendComent: "",
+      newCommnet: "",
+      sendItem: {
+        id: `input-${this.$_uid}`,
+        date: Date.now(),
+        user: {
+          name: "Reza Ansariad",
+          avatar: "",
+        },
+        text: "",
+        likes: 0,
+        iLikedIt: false,
+      },
     };
   },
+
   methods: {
-    sendEmail() {
-      alert("hi");
+    sendComment(e) {
+      this.sendItem.user.avatar = this.avatarUrl;
+      this.sendItem.text = e.target.value;
+      this.sendItem.user.avatar = this.avatarUrl;
+      this.$store.commit("setNewComment", this.sendItem);
+      this.newCommnet = "";
     },
   },
+
   computed: {
     avatarUrl() {
       return this.$store.state.global.avatarUrl;

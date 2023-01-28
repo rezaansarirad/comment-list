@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-    <div >
+    <div>
       <Header />
       <commentsList />
     </div>
