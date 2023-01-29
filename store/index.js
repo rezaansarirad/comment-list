@@ -106,7 +106,9 @@ export const mutations = {
   setReply: (state, { id, data }) => {
     state.comments.map((item) => {
       if (item.id === id) {
-        item.replies.push(data);
+        if (item.replies) {
+          item.replies.push(data);
+        }
       }
     });
   },

@@ -34,7 +34,7 @@ export default {
         text: "",
         likes: 0,
         iLikedIt: false,
-        replies: [],
+     
       },
     };
   },
