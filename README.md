@@ -3,12 +3,10 @@
 The objective of this challenge is to build a discussion commpoennt.
 
 <p align="center">
-    <img width="256" alt="Result" src="https://s2.uupload.ir/files/sticker_rwl0.gif">
+    <img width="256" alt="Result" src="https://s2.uupload.ir/files/discussion_cowc.png">
 </p>
-<!-- https://s2.uupload.ir/files/discussion_cowc.png -->
-<p align="center">
-    <img width="256" height="256" alt="Result"  src="https://s2.uupload.ir/files/sticker_rwl0.gif">
-</p>
+
+
 
 # Context 
 When we develop a web project or a exclusive ERP it's very common to have subject for discussion, like in a project overview page or in end of article page.
@@ -114,3 +112,7 @@ const discussions: IDiscussion[] = [
 
 
 Hope you enjoy.
+
+<p align="center">
+    <img width="256" height="256" alt="Result"  src="https://s2.uupload.ir/files/sticker_rwl0.gif">
+</p>
