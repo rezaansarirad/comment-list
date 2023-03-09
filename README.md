@@ -3,7 +3,7 @@
 The objective of this challenge is to build a discussion commpoennt.
 
 <p align="center">
-    <img width="256" alt="Discussion UI Design" src="https://github.com/rezaansarirad/comment-list/assets/images/discussion.png">
+    <img width="256" alt="Result" src="https://github.com/rezaansarirad/comment-list/assets/images/discussion.png">
 </p>
 
 
