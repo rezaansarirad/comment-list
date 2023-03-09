@@ -109,7 +109,7 @@ const discussions: IDiscussion[] = [
 
 
 <p align="center">
-    <img width="256" height="256" src="https://raw.githubusercontent.com/dnj/developer-recruitment/master/challenges/5/design/sticker.gif">
+    <img  src="https://s2.uupload.ir/files/sticker_rwl0.gif">
 </p>
 
 Hope you enjoy.
