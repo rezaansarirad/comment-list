@@ -3,7 +3,7 @@
 The objective of this challenge is to build a discussion commpoennt.
 
 <p align="center">
-    <img width="256" alt="Result" src="https://github.com/rezaansarirad/comment-list/assets/images/discussion.png">
+    <img width="256" alt="Result" src="https://s2.uupload.ir/files/discussion_cowc.png">
 </p>
 
 
@@ -107,7 +107,7 @@ const discussions: IDiscussion[] = [
 
 
 <p align="center">
-    <img width="256" height="256" src="https://raw.githubusercontent.com/dnj/developer-recruitment/master/challenges/5/design/sticker.gif">
+    <img width="256" height="256" src="https://s2.uupload.ir/files/sticker_n0ys.gif">
 </p>
 
 Hope you enjoy.
