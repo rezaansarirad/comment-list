@@ -3,9 +3,12 @@
 The objective of this challenge is to build a discussion commpoennt.
 
 <p align="center">
-    <img width="256" alt="Result" src="https://s2.uupload.ir/files/discussion_cowc.png">
+    <img width="256" alt="Result" src="https://s2.uupload.ir/files/sticker_rwl0.gif">
 </p>
-
+<!-- https://s2.uupload.ir/files/discussion_cowc.png -->
+<p align="center">
+    <img width="256" height="256" alt="Result"  src="https://s2.uupload.ir/files/sticker_rwl0.gif">
+</p>
 
 # Context 
 When we develop a web project or a exclusive ERP it's very common to have subject for discussion, like in a project overview page or in end of article page.
@@ -108,8 +111,6 @@ const discussions: IDiscussion[] = [
 - Try to keep it simple and do not use additional libraries but there is no hard limit. (See: [KISS](https://en.wikipedia.org/wiki/KISS_principle))
 
 
-<p align="center">
-    <img  src="https://s2.uupload.ir/files/sticker_rwl0.gif">
-</p>
+
 
 Hope you enjoy.
