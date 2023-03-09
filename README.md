@@ -100,14 +100,16 @@ const discussions: IDiscussion[] = [
 
 
 
+
 ## Framework & Technologies
 - VueJS 2
 - SASS
-- ES6 Javascript
+- ES6 Javascript 
 
 
 <p align="center">
-    <img width="256" height="256" src="https://s2.uupload.ir/files/sticker_n0ys.gif">
+    <img width="256" height="256" src="https://raw.githubusercontent.com/dnj/developer-recruitment/master/challenges/5/design/sticker.gif">
 </p>
+
 
 Hope you enjoy.
