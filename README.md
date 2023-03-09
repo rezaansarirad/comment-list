@@ -1,18 +1,10 @@
-# Frontend Recruitment Test
+# comment-list
 
 The objective of this challenge is to build a discussion commpoennt.
 
 <p align="center">
-    <img width="256" height="256" alt="Result"  src="https://s2.uupload.ir/files/sticker_rwl0.gif">
+    <img width="256" alt="result" src="https://s2.uupload.ir/files/discussion_cowc.png">
 </p>
-
-<p align="center">
-    <img width="256" alt="Result" src="https://s2.uupload.ir/files/discussion_cowc.png">
-</p>
-
-
-
-
 
 
 # Context 
@@ -105,15 +97,21 @@ const discussions: IDiscussion[] = [
     }
 ];
 
+<Discussion :discussions="discussions" />
+```
+
+
 
 
 ## Framework & Technologies
 - VueJS 2
 - SASS
-- ES6 Javascript 
+- ES6 Javascript
+- Try to keep it simple and do not use additional libraries but there is no hard limit. (See: [KISS](https://en.wikipedia.org/wiki/KISS_principle))
 
 
+<p align="center">
+    <img width="256" height="256" src="https://s2.uupload.ir/files/sticker_rwl0.gif">
+</p>
 
 Hope you enjoy.
-
-
