@@ -1,69 +1,113 @@
-# jay-test
+# Frontend Recruitment Test
 
-## Build Setup
+The objective of this challenge is to build a discussion commpoennt.
 
-```bash
-# install dependencies
-$ yarn install
+<p align="center">
+    <img width="256" alt="Discussion UI Design" src="https://raw.githubusercontent.com/dnj/developer-recruitment/master/challenges/5/design/discussion.png">
+</p>
 
-# serve with hot reload at localhost:3000
-$ yarn dev
 
-# build for production and launch server
-$ yarn build
-$ yarn start
+# Context 
+When we develop a web project or a exclusive ERP it's very common to have subject for discussion, like in a project overview page or in end of article page.
 
-# generate static project
-$ yarn generate
+# Functionality
+
+In this component discussions receive data from a array with this structure:
+```ts
+interface IUser {
+    name: string;
+    avatar?: string;
+}
+interface IComment {
+    id: number;
+    date: number; // unix timestamp in milliseconds.
+    user: IUser;
+    text: string;
+    likes: number;
+    iLikedIt: boolean;
+}
+interface IDiscussion extends IComment {
+    replies: IComment[];
+}
+interface IProps {
+    comments: IComment[];
+}
 ```
 
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+example:
+```tsx
+const discussions: IDiscussion[] = [
+    {
+        id: 3,
+        date: 1672576574000,
+        user: {
+            name: "Bessie Cooper",
+            avatar: "https://www.godaddy.com/garage/wp-content/uploads/judith-kallos-BW-NEW-150x150.jpg"
+        },
+        text: "I think for our second compaign we can try to target a different audience. How does it sound for you?",
+        likes: 2,
+        iLikedIt: false,
+        replies: [
+            {
+                id: 5,
+                date: 1672581014000,
+                user: {
+                    name: "Marvin McKinney",
+                    avatar: "https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50"
+                },
+                text: "Yes, that sounds good! I can think about this tomorrow. Then do we plan to start that compaign?",
+                likes: 3,
+                iLikedIt: true,
+            },
+            {
+                id: 6,
+                date: 1672581614000,
+                user: {
+                    name: "Bessie Cooper",
+                    avatar: "https://www.godaddy.com/garage/wp-content/uploads/judith-kallos-BW-NEW-150x150.jpg",
+                },
+                text: "We plan to run the compaign on Friday - as far as I know. Do you think you will get this done by Thursday @Marvin?",
+                likes: 0,
+                iLikedIt: false,
+            }
+        ]
+    },
+    {
+        id: 2,
+        date: 1672232414000,
+        user: {
+            name: "Marvin McKinney",
+            avatar: "https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50"
+        },
+        text: "The first compaign went smoothly. Please make sure to see all attachments with the results to understand the flow.",
+        likes: 2,
+        iLikedIt: false,
+        replies: []
+    },
+    {
+        id: 1,
+        date: 1671886814000,
+        user: {
+            name: "Savannah Nguyen"
+        },
+        text: "We have just published the first campaign. Let's see the results in the 5 days and we will iterate on this.",
+        likes: 50,
+        iLikedIt: true,
+        replies: []
+    }
+];
 
-## Special Directories
-
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
-
-### `assets`
-
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
-
-### `components`
-
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
-
-### `layouts`
-
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
 
 
-### `pages`
 
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
+## Framework & Technologies
+- VueJS 2
+- SASS
+- ES6 Javascript
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
 
-### `plugins`
+<p align="center">
+    <img width="256" height="256" src="https://raw.githubusercontent.com/dnj/developer-recruitment/master/challenges/5/design/sticker.gif">
+</p>
 
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
-
-### `static`
-
-This directory contains your static files. Each file inside this directory is mapped to `/`.
-
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
-
-### `store`
-
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+Hope you enjoy.
