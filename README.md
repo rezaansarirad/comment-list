@@ -3,8 +3,15 @@
 The objective of this challenge is to build a discussion commpoennt.
 
 <p align="center">
+    <img width="256" height="256" alt="Result"  src="https://s2.uupload.ir/files/sticker_rwl0.gif">
+</p>
+
+<p align="center">
     <img width="256" alt="Result" src="https://s2.uupload.ir/files/discussion_cowc.png">
 </p>
+
+
+
 
 
 
@@ -100,19 +107,13 @@ const discussions: IDiscussion[] = [
 
 
 
-
-
 ## Framework & Technologies
 - VueJS 2
 - SASS
 - ES6 Javascript 
-- Try to keep it simple and do not use additional libraries but there is no hard limit. (See: [KISS](https://en.wikipedia.org/wiki/KISS_principle))
-
 
 
 
 Hope you enjoy.
 
-<p align="center">
-    <img width="256" height="256" alt="Result"  src="https://s2.uupload.ir/files/sticker_rwl0.gif">
-</p>
+
