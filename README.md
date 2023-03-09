@@ -105,11 +105,11 @@ const discussions: IDiscussion[] = [
 - VueJS 2
 - SASS
 - ES6 Javascript 
+- Try to keep it simple and do not use additional libraries but there is no hard limit. (See: [KISS](https://en.wikipedia.org/wiki/KISS_principle))
 
 
 <p align="center">
-    <img width="256" height="256" src="https://s2.uupload.ir/files/sticker_n0ys.gif">
+    <img width="256" height="256" src="https://raw.githubusercontent.com/dnj/developer-recruitment/master/challenges/5/design/sticker.gif">
 </p>
-
 
 Hope you enjoy.
